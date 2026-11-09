@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de Tareas</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="container">
+        <a href="../index.html" class="back-link">← Volver al inicio</a>
+        <h2>Gestor de Tareas</h2>
+        <div class="form-group" style="display: flex; gap: 10px;">
+            <input type="text" id="nueva-tarea" placeholder="Escribe una nueva tarea...">
+            <button onclick="agregarTarea()" style="width: auto; white-space: nowrap;">Agregar</button>
+        </div>
+        <p id="error-msg" class="error" style="display: none; margin-bottom: 1rem;">La tarea no puede estar vacía.</p>
+        <ul id="lista-tareas" style="list-style: none;">
+            <!-- Las tareas se inyectan aquí -->
+        </ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

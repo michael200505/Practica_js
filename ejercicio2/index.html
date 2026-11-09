@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Verificador de Contraseña</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="container">
+        <a href="../index.html" class="back-link">← Volver al inicio</a>
+        <h2>Verificador de Contraseña</h2>
+        <div class="form-group">
+            <label for="password">Contraseña (Verificación en tiempo real):</label>
+            <input type="text" id="password" placeholder="Escribe una contraseña de prueba">
+        </div>
+        <div id="resultado" class="result" style="display: block;">
+            <div id="rule-length" class="rule">✗ Al menos 8 caracteres</div>
+            <div id="rule-digit" class="rule">✗ Al menos un dígito (0-9)</div>
+            <div id="rule-space" class="rule pass">✓ Sin espacios en blanco</div>
+            <div id="final-message" style="margin-top: 1rem;"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

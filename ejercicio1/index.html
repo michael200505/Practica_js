@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora de Compra</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="container">
+        <a href="../index.html" class="back-link">← Volver al inicio</a>
+        <h2>Calculadora de Compra</h2>
+        <div class="form-group">
+            <label for="precio">Precio unitario ($):</label>
+            <input type="number" id="precio" step="0.01" placeholder="Ej. 12.50">
+        </div>
+        <div class="form-group">
+            <label for="cantidad">Cantidad (unidades):</label>
+            <input type="number" id="cantidad" placeholder="Ej. 3">
+        </div>
+        <button onclick="calcularTotal()">Calcular total</button>
+        <div id="resultado" class="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
