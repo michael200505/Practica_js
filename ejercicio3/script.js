@@ -1,10 +1,13 @@
 // Arreglo inicial
 const notas = [8, 6, 9, 7, 5, 10, 4, 7];
 
+// Muestra las notas del arreglo automáticamente en el párrafo superior al cargar
+document.getElementById('notas-iniciales').textContent = `Notas actuales: [${notas.join(', ')}]`;
+
 function analizarNotas() {
     const resultadoDiv = document.getElementById('resultado');
     
-    // Validar rango de notas (Reto opcional)
+    // Validar rango de notas (Reto opcional: 0 a 10)
     for (let i = 0; i < notas.length; i++) {
         if (notas[i] < 0 || notas[i] > 10) {
             resultadoDiv.style.display = 'block';

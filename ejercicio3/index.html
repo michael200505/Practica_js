@@ -9,7 +9,10 @@
     <div class="container">
         <a href="../index.html" class="back-link">← Volver al inicio</a>
         <h2>Analizador de Notas</h2>
-        <p style="margin-bottom: 1rem; color: #bbb;">Notas actuales: [8, 6, 9, 7, 5, 10, 4, 7]</p>
+        
+        <!-- Le asignamos id para actualizarlo dinámicamente -->
+        <p id="notas-iniciales" style="margin-bottom: 1rem; color: #bbb;"></p>
+        
         <button onclick="analizarNotas()">Analizar</button>
         <div id="resultado" class="result"></div>
     </div>
