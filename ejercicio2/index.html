@@ -14,12 +14,13 @@
             <input type="text" id="password" placeholder="Escribe una contraseña de prueba">
         </div>
         
-        <!-- Agregamos el botón requerido por la rúbrica -->
         <button onclick="verificarPassword()">Verificar</button>
-        <div id="resultado" class="result" style="display: block;">
-            <div id="rule-length" class="rule">✗ Al menos 8 caracteres</div>
-            <div id="rule-digit" class="rule">✗ Al menos un dígito (0-9)</div>
-            <div id="rule-space" class="rule pass">✓ Sin espacios en blanco</div>
+
+        <!-- El contenedor de resultados inicia oculto -->
+        <div id="resultado" class="result" style="display: none;">
+            <div id="rule-length" class="rule"></div>
+            <div id="rule-digit" class="rule"></div>
+            <div id="rule-space" class="rule"></div>
             <div id="final-message" style="margin-top: 1rem;"></div>
         </div>
     </div>
